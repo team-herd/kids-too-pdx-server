@@ -1,8 +1,9 @@
 require('dotenv').config();
-const fetchEvents = require('./lib/services/datascraper');
+require('./lib/utils/connect')();
+const mongoose = require('mongoose');
+const seedData = require('./tests/seedData');
 
-fetchEvents()
-  .then(events => {
-    console.log(events, 'events');
-  });
-
+seedData(100)
+  .then(() => console.log('done'))
+  .catch(err => console.error(err))
+  .finally(() => mongoose.connection.close());
