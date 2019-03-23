@@ -26,3 +26,4 @@ module.exports = (totalEvents = 20, totalReferrals = 10) => {
         eventName: chance.pickone(events).toJSON().name,
         date: chance.date()
       }))));
+};
