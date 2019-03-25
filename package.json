@@ -19,7 +19,10 @@
     "express": "^4.16.4",
     "express-jwt": "^5.3.1",
     "jwks-rsa": "^1.4.0",
-    "mongoose": "^5.4.19"
+    "mongoose": "^5.4.19",
+    "node-html-parser": "^1.1.13",
+    "request": "^2.88.0",
+    "superagent": "^4.1.0"
   },
   "devDependencies": {
     "chance": "^1.0.18",
