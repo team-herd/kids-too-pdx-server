@@ -1,7 +1,10 @@
 
-const eventScraper = require('./lib/services/datascraper');
+const eventScraper = require('./lib/services/saScraper');
+const parks = require('./lib/services/parkSwimScraper');
+// const library = require('./lib/services/libraryScraper');
+const pdxparent = require('./lib/services/pdxParent');
 
-eventScraper()
+pdxparent()
   .then(events => {
     
   });
