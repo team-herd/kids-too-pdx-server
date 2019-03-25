@@ -21,17 +21,21 @@ describe('Event model', () => {
         zip: 97062
       },
       time: '5pm',
-      price: 25,
-      age: 12,
-      pending: true,
+      price: '25',
+      age: 'Pre-K',
       category: 'sports',
-      likes: 100
+      likes: 100,
+      organization: {
+        name: 'THPRC',
+        number: '503-555-1234'
+      }
     })
       .then(event => expect(event.toJSON()).toEqual({
         _id: expect.any(Object),
         __v: expect.any(Number),
         user: 'kidstoopdx@email.com',
         name: 'KidsToo PDX',
+        image: 'https://paintncreate.com/wp-content/uploads/2018/03/Emoji-Week.png',
         date: expect.any(Date),
         location: {
           name: 'Tualatin Rec Center',
@@ -39,11 +43,14 @@ describe('Event model', () => {
           zip: 97062
         },
         time: '5pm',
-        price: 25,
-        age: 12,
-        pending: true,
+        price: '25',
+        age: 'Pre-K',
         category: 'sports',
-        likes: 100
+        likes: 100,
+        organization: {
+          name: 'THPRC',
+          number: '503-555-1234'
+        }
       }));
   });
 });
