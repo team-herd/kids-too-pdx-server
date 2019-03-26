@@ -22,7 +22,8 @@ describe('Event model', () => {
       },
       time: '5pm',
       price: '25',
-      age: 'Pre-K',
+      ageMin: 3,
+      ageMax: 5,
       category: 'sports',
       likes: 100,
       organization: {
@@ -44,7 +45,8 @@ describe('Event model', () => {
         },
         time: '5pm',
         price: '25',
-        age: 'Pre-K',
+        ageMin: 3,
+        ageMax: 5,
         category: 'sports',
         likes: 100,
         organization: {
