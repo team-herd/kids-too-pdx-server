@@ -9,8 +9,7 @@ const pdxparent = require('./lib/services/pdxParent');
 
 art({})
   .then(() => console.log('Done'))
-  .catch(err => console.error(err))
-  .catch(err=> console.error(err))
+  .catch(err => console.error(err));
 
 data({})
   .then(() => console.log('done'))
