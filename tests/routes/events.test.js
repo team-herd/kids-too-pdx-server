@@ -33,13 +33,20 @@ describe('event routes', () => {
         category: 'arts',
         ageMin: 2,
         ageMax: 14,
-        price: 100
+        price: 100,
+        pending: true
       }));
   });
 
   it('filters an event', () => {
     return request(app)
       .get('/events/query?ageMin=2&ageMax=14&price=100')
+      .then(res => expect(res.body).toBeDefined());
+  });
+
+  it('gets all events', () => {
+    return request(app)
+      .get('/events')
       .then(res => expect(res.body).toBeDefined());
   });
 });
