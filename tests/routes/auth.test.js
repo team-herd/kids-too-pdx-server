@@ -1,6 +1,8 @@
 const request = require('supertest');
 const app = require('../../lib/app');
 
+jest.mocks('../../lib/services/auth.js');
+
 describe('auth routes', () => {
   let user = null;
 
