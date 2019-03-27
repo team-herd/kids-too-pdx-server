@@ -82,4 +82,10 @@ describe('event routes', () => {
           }));
       });
   });
+
+  it('get pending events', () => {
+    return request(app)
+      .get('/events/pending')
+      .then(res => console.log('res', res.body));
+  });
 });

@@ -26,7 +26,7 @@ const seedData = require('./tests/seedData');
 //   .catch(err => console.error(err))
 //   .finally(() => mongoose.connection.close());
 
-seedData(100)
+seedData(10)
   .then(() => console.log('done'))
   .catch(err => console.error(err))
   .finally(() => mongoose.connection.close());
