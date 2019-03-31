@@ -36,7 +36,7 @@ describe('Event model', () => {
         __v: 0,
         user: 'kidstoopdx@email.com',
         name: 'KidsToo PDX',
-        image: 'https://www.kids-partycabin.com/images/601xNxkids-party-ideas.jpg.pagespeed.ic.BcdgHRTk4x.jpg',
+        image: '../../../public/assets/default.jpg',
         date: expect.any(Date),
         location: {
           name: 'Tualatin Rec Center',
